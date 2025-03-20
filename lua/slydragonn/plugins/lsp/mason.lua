@@ -11,11 +11,11 @@ return {
 			automatic_installation = true,
 			ensure_installed = {
 				"cssls",
+				"csharp-language-server",
 				"eslint",
 				"html",
 				"jsonls",
 				"ts_ls",
-				"pyright",
 				"tailwindcss",
 				"gopls",
 				"golangci_lint_ls",
@@ -26,9 +26,6 @@ return {
 			ensure_installed = {
 				"prettier",
 				"stylua", -- lua formatter
-				"isort", -- python formatter
-				"black", -- python formatter
-				"pylint",
 				"eslint_d",
 			},
 		})
