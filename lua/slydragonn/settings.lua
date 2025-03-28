@@ -25,3 +25,5 @@ o.inccommand = "split"
 o.splitright = true
 o.splitbelow = true
 o.termguicolors = true
+
+o.scrolloff = 30
