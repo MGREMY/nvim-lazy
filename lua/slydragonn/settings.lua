@@ -1,8 +1,6 @@
 local global = vim.g
 local o = vim.opt
 
-o.fileformats = "unix"
-
 o.number = true
 o.relativenumber = true
 o.clipboard = "unnamedplus"
