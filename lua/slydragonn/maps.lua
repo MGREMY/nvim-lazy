@@ -31,10 +31,10 @@ map("n", "<C-Up>", "<C-w>k")
 map("n", "<C-Down>", "<C-w>j")
 
 -- Resize Windows
-map("n", "<C-S-Right>", "<C-w><")
-map("n", "<C-S-Left>", "<C-w>>")
-map("n", "<C-S-Down>", "<C-w>+")
-map("n", "<C-S-Up>", "<C-w>-")
+map("n", "<S-A-Right>", "<C-w><")
+map("n", "<S-A-Left>", "<C-w>>")
+map("n", "<S-A-Down>", "<C-w>+")
+map("n", "<S-A-Up>", "<C-w>-")
 
 -- Telescope
 map("n", "<leader>ff", "<CMD>Telescope find_files<CR>", { desc = "Fuzzy find files in cwd" })
