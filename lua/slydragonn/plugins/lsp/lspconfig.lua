@@ -4,7 +4,10 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
-    "hrsh7th/cmp-nvim-lsp",
+    {
+      "hrsh7th/cmp-nvim-lsp",
+      commit = "a8912b8"
+    },
     { "folke/neodev.nvim", opts = {} },
   },
   config = function()
