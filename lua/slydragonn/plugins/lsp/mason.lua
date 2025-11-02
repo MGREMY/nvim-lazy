@@ -1,14 +1,17 @@
 return {
   "williamboman/mason.nvim",
   dependencies = {
-    "williamboman/mason-lspconfig.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    {
+      "williamboman/mason-lspconfig.nvim",
+      branch = "v1.x",
+    },
   },
   config = function()
     require("mason").setup()
 
     require("mason-lspconfig").setup({
       automatic_installation = true,
+      branch = "v1.x",
       ensure_installed = {
         "cssls",
         "csharp_ls",
@@ -19,14 +22,6 @@ return {
         "tailwindcss",
         "gopls",
         "golangci_lint_ls",
-      },
-    })
-
-    require("mason-tool-installer").setup({
-      ensure_installed = {
-        "prettier",
-        "stylua", -- lua formatter
-        "eslint_d",
       },
     })
   end,
